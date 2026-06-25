@@ -1,50 +1,52 @@
-# Dependencies
-frontend/node_modules/
+# OS Files
+.DS_Store
+Thumbs.db
 
-# Build output
-**/build/
-**/dist/
-**/target/
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Environment files
-.env
-.env.*
-*.local
-
-# Editor and IDE files
-frontend/.vscode/*
-frontend/!.vscode/extensions.json
+# IntelliJ / IDE
 .idea/
 *.iml
 *.iws
-*.ipr
-.project
+.vscode/
+
+# Spring / Maven / Gradle
+**/target/
+**/build/
+**/bin/
+**/out/
+**/.gradle/
+**/gradlew
+**/gradlew.bat
+
+# Eclipse / STS
 .classpath
-.factorypath
+.project
 .settings/
-.omx
+.factorypath
 
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
+# Logs / Temp
+**/logs/
+**/log/
+**/*.log
+**/*.tmp
+**/temp/
 
-# Java / Tomcat local files
-backend/.smarttomcat/
-*.class
-*.war
-*.ear
-*.pid
+# Node.js / React (Frontend)
+**/node_modules/
+**/dist/
+**/build/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnp/
+**/.pnp.js
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+.eslintcache
 
-# Test and coverage output
-coverage/
-.nyc_output/
-
+# 기타 설정 및 서버 파일
+.smarttomcat/
+.claude/
+CLAUDE.md
+web/

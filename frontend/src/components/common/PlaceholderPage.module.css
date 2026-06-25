@@ -3,34 +3,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 620px;
+  min-height: 400px;
   text-align: center;
-  background: #f3f4f7;
+  background: #fff;
   border-radius: 12px;
-  border: 1px solid #ece3c9;
-  padding: 64px;
+  border: 2px dashed #cdd5e0;
+  padding: 48px;
   gap: 12px;
 }
 
 .badge {
   font-size: 13px;
-  padding: 5px 13px;
-  background: #fff3d7;
-  color: #b46a00;
+  padding: 4px 12px;
+  background: #ebf4ff;
+  color: #2b6cb0;
   border-radius: 20px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .title {
   font-size: 24px;
-  font-weight: 800;
-  color: #0f172a;
+  font-weight: 700;
+  color: #1a3c5e;
   margin: 8px 0 0;
 }
 
 .description {
   font-size: 15px;
-  color: #667085;
+  color: #718096;
   margin: 0;
-  line-height: 1.6;
+}
+
+.assignee {
+  font-size: 14px;
+  color: #555;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+
+.guide {
+  font-size: 13px;
+  color: #a0aec0;
+  margin: 8px 0 0;
 }
