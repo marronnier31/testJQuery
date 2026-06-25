@@ -1,0 +1,40 @@
+.header {
+  height: 68px;
+  background: #fff;
+  border-bottom: 1px solid rgba(226, 232, 213, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageName {
+  color: #172033;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.greeting {
+  font-size: 14px;
+  color: #667085;
+}
+
+.greeting strong {
+  color: #172033;
+  font-weight: 800;
+}

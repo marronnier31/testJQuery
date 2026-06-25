@@ -1,0 +1,212 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 208, 0, 0.12), transparent 30%),
+    linear-gradient(120deg, #fff9df 0%, #f1fff1 100%);
+}
+
+.card {
+  width: min(510px, 100%);
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 42px 38px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(45, 74, 45, 0.12);
+}
+
+.logoBox {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.logo {
+  width: 270px;
+  max-width: 86%;
+  height: auto;
+  display: inline-block;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #667085;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+  padding: 0 14px;
+  border: 1px solid #c9ced6;
+  border-radius: 4px;
+  background: #fff;
+  color: #344054;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #ff9f0a;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 159, 10, 0.16);
+}
+
+.passwordBox {
+  position: relative;
+}
+
+.passwordInput {
+  padding-right: 52px;
+}
+
+.eyeButton {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+}
+
+.eyeButton svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.eyeButton:hover {
+  color: #ff9f0a;
+}
+
+.error {
+  font-size: 13px;
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 0;
+}
+
+.button {
+  margin-top: -8px;
+  height: 52px;
+  padding: 0 18px;
+  background: #ff9f0a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 159, 10, 0.28);
+  transition: background 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background: #f09300;
+  box-shadow: 0 6px 12px rgba(255, 159, 10, 0.32);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.link {
+  color: #475467;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #ff9f0a;
+}
+
+.divider {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 18px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 34px 24px;
+  }
+
+  .logo {
+    width: 230px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .form {
+    gap: 20px;
+  }
+
+  .links {
+    margin-top: 26px;
+  }
+}

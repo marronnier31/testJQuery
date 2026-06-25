@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 620px;
+  text-align: center;
+  background: #f3f4f7;
+  border-radius: 12px;
+  border: 1px solid #ece3c9;
+  padding: 64px;
+  gap: 12px;
+}
+
+.badge {
+  font-size: 13px;
+  padding: 5px 13px;
+  background: #fff3d7;
+  color: #b46a00;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 8px 0 0;
+}
+
+.description {
+  font-size: 15px;
+  color: #667085;
+  margin: 0;
+  line-height: 1.6;
+}

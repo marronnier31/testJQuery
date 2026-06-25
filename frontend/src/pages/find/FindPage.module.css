@@ -1,0 +1,125 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 208, 0, 0.12), transparent 30%),
+    linear-gradient(120deg, #fff9df 0%, #f1fff1 100%);
+}
+
+.card {
+  width: min(510px, 100%);
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 42px 38px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(45, 74, 45, 0.12);
+}
+
+.logoBox {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.logo {
+  width: 270px;
+  max-width: 86%;
+  height: auto;
+  display: inline-block;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin: 0;
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.placeholder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 22px;
+  border: 1px solid #ece3c9;
+  border-radius: 10px;
+  background: #fffdf5;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.badge {
+  font-size: 13px;
+  padding: 5px 13px;
+  background: #fff3d7;
+  color: #b46a00;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.placeholderTitle {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 8px 0 0;
+}
+
+.placeholderText {
+  font-size: 15px;
+  color: #667085;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.link {
+  color: #475467;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ff9f0a;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 18px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 34px 24px;
+  }
+
+  .logo {
+    width: 230px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+}

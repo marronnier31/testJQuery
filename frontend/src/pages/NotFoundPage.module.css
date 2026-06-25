@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 12px;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px dashed #feb2b2;
+  padding: 48px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 48px;
+  color: #c53030;
+  line-height: 1;
+}
+
+.title {
+  color: #c53030;
+  margin: 0;
+}
+
+.description {
+  color: #555;
+  font-size: 15px;
+}
+
+.path {
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c53030;
+}
+
+.guide {
+  color: #888;
+  font-size: 13px;
+}
