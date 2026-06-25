@@ -1,115 +1,36 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: user
-  Date: 25. 12. 5.
-  Time: 오후 1:36
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page language="java" pageEncoding="UTF-8" %>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>Title</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>JSP 실습</title>
+<jsp:include page="/WEB-INF/view/common/common_include.jsp" />
 </head>
 <body>
+	<div id="wrap_area">
+		<div id="container">
+			<ul>
+				<li class="lnb"><jsp:include page="/WEB-INF/view/common/lnbMenu.jsp" /></li>
+				<li class="contents">
+					<div class="content">
+						<jsp:include page="/WEB-INF/view/common/header.jsp">
+							<jsp:param name="menu1" value="JSP 실습" />
+							<jsp:param name="menu2" value="courseManagementModal" />
+						</jsp:include>
 
+						<p class="conTitle">
+							<span>JSP 실습</span>
+						</p>
 
-<!-- 모달 배경 -->
-<div id="courseModal" class="modal-overlay" style="display: none;">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2>강의 상세</h2>
-            <button class="modal-close" onclick="closeCourseModal()">&times;</button>
-        </div>
-
-        <div class="modal-body">
-            <!-- 강의명 -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label>강의명</label>
-                    <input type="text" id="modal_title" readonly />
-                </div>
-                <div class="form-group">
-                    <label>시험상태</label>
-                    <input type="text" id="modal_test_status" readonly />
-                </div>
-            </div>
-
-            <!-- 강사명 -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label>강사명</label>
-                    <input type="text" id="modal_professor" readonly />
-                </div>
-                <div class="form-group">
-                    <label>보조 강사명</label>
-                    <input type="text" id="modal_sub_prof" readonly />
-                </div>
-            </div>
-
-            <!-- 수강인원 -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label>수강인원</label>
-                    <input type="text" id="modal_people_limit" value="40" readonly />
-                </div>
-                <div class="form-group">
-                    <label>강의실 명</label>
-                    <input type="text" id="modal_class_id" readonly />
-                </div>
-            </div>
-
-            <!-- 시작일자 -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label>시작일자</label>
-                    <input type="text" id="modal_start_date" readonly />
-                </div>
-                <div class="form-group">
-                    <label>시간</label>
-                    <input type="text" id="modal_time" readonly />
-                </div>
-            </div>
-
-            <!-- 강의단계 -->
-            <div class="form-row">
-                <div class="form-group" style="flex: 1;">
-                    <label>승인 상태</label>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="text" id="modal_req_status" readonly style="flex: 1;" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- 강의공지사항 -->
-            <div class="form-row">
-                <div class="form-group" style="width: 100%;">
-                    <label>강의공지사항</label>
-                    <textarea id="modal_operations_note" readonly></textarea>
-                </div>
-            </div>
-
-
-            <!-- 강의설명 -->
-            <div class="form-row">
-                <div class="form-group" style="width: 100%;">
-                    <label>수업내용</label>
-                    <textarea id="modal_description" readonly></textarea>
-                </div>
-            </div>
-
-            <!-- 강의계획서 -->
-            <div class="form-row">
-                <div class="form-group" style="width: 100%;">
-                    <label>강의계획서</label>
-                    <textarea id="modal_syllabus" readonly></textarea>
-                </div>
-            </div>
-
-        <div class="modal-footer">
-            <button class="btn-secondary" onclick="closeCourseModal()">닫기</button>
-        </div>
-    </div>
-</div>
-
+						<div class="container">
+							<!-- JSP 화면 실습 영역 -->
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
