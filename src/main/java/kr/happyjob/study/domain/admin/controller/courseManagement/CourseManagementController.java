@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-//@RequestMapping("/admin/courseManagement")
-@RequestMapping("api/admin/courseManagement")
+@RequestMapping("/admin/courseManagement")
+//@RequestMapping("api/admin/courseManagement")
 public class CourseManagementController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());

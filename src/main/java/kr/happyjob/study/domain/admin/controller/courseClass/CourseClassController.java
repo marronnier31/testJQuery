@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @Controller
-//@RequestMapping("/admin/classrooms")
-@RequestMapping("api/admin/classrooms")
+@RequestMapping("/admin/classrooms")
+//@RequestMapping("api/admin/classrooms")
 public class CourseClassController {
 
     @Autowired
@@ -106,4 +106,3 @@ public class CourseClassController {
 
 
 }
-

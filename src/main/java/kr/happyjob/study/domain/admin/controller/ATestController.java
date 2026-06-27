@@ -16,8 +16,8 @@ import java.util.Map;
 
 @Controller
 @RequiredArgsConstructor
-//@RequestMapping("/admin/test-exam")
-@RequestMapping("api/admin/test-exam")
+@RequestMapping("/admin/test-exam")
+//@RequestMapping("api/admin/test-exam")
 public class ATestController {
 
     // Set logger

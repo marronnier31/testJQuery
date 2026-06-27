@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-//@RequestMapping("/admin/exam")
-@RequestMapping("api/admin/exam")
+@RequestMapping("/admin/exam")
+//@RequestMapping("api/admin/exam")
 public class ATestScheduleController {
 
     @Autowired
